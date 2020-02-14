@@ -5,7 +5,7 @@ services:
 
 script:
   - |
-    export IMAGE=cusspvz/redirect:latest &&
+    export IMAGE=upbound/frontend-nginx-redirect:latest &&
     docker login --username="$DOCKER_USERNAME" --password="$DOCKER_PASSWORD" &&
     docker build -t ${IMAGE} . &&
     docker push ${IMAGE} &&
